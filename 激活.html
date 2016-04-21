@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable = no">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.4.4.min.js"></script>
     <script>
         var winW = document.documentElement.clientWidth;
         var desW = 640;
@@ -20,11 +21,10 @@
     fontSize = 640/7.5 =85.33333333333333
     -->
 </head>
-<body>
-
+<body style="background: #4683af;">
 <header>
     <span>返回</span>
-    我的项目
+    特创易
     <ul>
         <li></li>
         <li></li>
@@ -32,30 +32,13 @@
     </ul>
 </header>
 <section class="content">
-    <div class="card">
-        <div class="logo"></div>
-        <span>您的会员卡暂未激活</span>
-        <div class="card_message">
-            <span>会员卡号：<br>10210338602</span>
-            <a href="#">马上激活</a>
-        </div>
+    <div class="logo_jh"></div>
+    <div class="logo_Sign">
+        <input type="text" placeholder="您在特创易的手机号" class="phone_num"/>
+        <input type="text" placeholder="请输入6位验证码" class="code"/>
+        <a href="#" class="button send">发送</a>
     </div>
-    <!--<div class="card">
-        <div class="logo"></div>
-        <h1>特创易</h1>
-        <div class="card_message">
-            <span class="ac">会员卡号：10210338602</span>
-        </div>
-    </div>-->
-    <ul class="list">
-        <li><i class="icon icon_1"></i><a href="#">项目</a></li>
-        <li><i class="icon icon_2"></i><a href="#">消息</a></li>
-        <li><i class="icon icon_3"></i><a href="#">我的优惠券</a></li>
-    </ul>
-    <ul class="list">
-        <li><i class="icon icon_4"></i><a href="#">个人资料</a></li>
-        <li><i class="icon icon_5"></i><a href="#">特创易会员服务</a></li>
-    </ul>
+    <a href="#" class="activation">激活</a>
 </section>
 <footer></footer>
 </body>

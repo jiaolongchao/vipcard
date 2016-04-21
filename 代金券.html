@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable = no">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.4.4.min.js"></script>
+    <script>
+        var winW = document.documentElement.clientWidth;
+        var desW = 640;
+        var proportion = desW/100;/*比例*/
+        document.documentElement.style.fontSize = winW/proportion +"px";
+        if(winW>desW){
+            document.documentElement.style.fontSize = "100px";
+        }
+    </script>
+    <!--
+    如果设备宽度是750 html的字体大小设成100px;
+    640 /fontSize = 750/100
+    fontSize = 640/7.5 =85.33333333333333
+    -->
+</head>
+<body>
+<header>
+    <span>返回</span>
+    代金券
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</header>
+<section class="content bodymain" id="vou_list">
+    <div class="vouchers">
+        <span class="vou_name">代金券</span>
+        <span class="vou_money"><em>￥</em>300</span>
+        <span class="vou_num"><a href="#" class="use">领取</a>1324-4567-8974-2569</span>
+        <div class="tips">
+            <span>特创易代金券</span>
+            <span class="arrow"></span>
+            <span>有效期至：永久有效</span>
+        </div>
+        <div class="tips_con">此劵只限购买特晓知，特logo的产品套餐使用</div>
+    </div>
+    <div class="vouchers">
+        <span class="vou_name">代金券</span>
+        <span class="vou_money"><em>￥</em>300</span>
+        <span class="vou_num"><a href="#" class="nouse">未使用</a>1324-4567-8974-2569</span>
+        <div class="tips">
+            <span>特创易代金券</span>
+            <span class="arrow"></span>
+            <span>有效期至：永久有效</span>
+        </div>
+        <div class="tips_con">此劵只限购买特晓知，特logo的产品套餐使用</div>
+    </div>
+    <div class="vouchers">
+        <span class="vou_name">代金券</span>
+        <span class="vou_money"><em>￥</em>300</span>
+        <span class="vou_num"><a href="#" class="nouse">未使用</a>1324-4567-8974-2569</span>
+        <div class="tips">
+            <span>特创易代金券</span>
+            <span class="arrow"></span>
+            <span>有效期至：永久有效</span>
+        </div>
+        <div class="tips_con">此劵只限购买特晓知，特logo的产品套餐使用</div>
+    </div>
+    <div class="vouchers">
+        <span class="vou_name">代金券</span>
+        <span class="vou_money"><em>￥</em>300</span>
+        <span class="vou_num"><a href="#" class="nouse">未使用</a>1324-4567-8974-2569</span>
+        <div class="tips">
+            <span>特创易代金券</span>
+            <span class="arrow"></span>
+            <span>有效期至：永久有效</span>
+        </div>
+        <div class="tips_con">此劵只限购买特晓知，特logo的产品套餐使用</div>
+    </div>
+    <div class="vouchers">
+        <span class="vou_name">代金券</span>
+        <span class="vou_money"><em>￥</em>300</span>
+        <span class="vou_num"><a href="#" class="nouse">未使用</a>1324-4567-8974-2569</span>
+        <div class="tips">
+            <span>特创易代金券</span>
+            <span class="arrow"></span>
+            <span>有效期至：永久有效</span>
+        </div>
+        <div class="tips_con">此劵只限购买特晓知，特logo的产品套餐使用</div>
+    </div>
+</section>
+<script>
+    $(function(){
+        $('.vouchers > .tips').bind("click",function(){
+            $(this).find('.arrow').toggleClass('down')
+            $(this).next(".tips_con").fadeToggle();
+        })
+
+
+    })
+</script>
+<script>
+    $(function(){
+        $(document).ready(function(){
+            var viewHeight = $(window).height();
+            $(window).scroll(function () {
+                var pageH = $(document.body).height();
+                var scrollT = $(window).scrollTop();
+                var num = (pageH-viewHeight-scrollT)/viewHeight;
+                var loading = '<div class="loading">正在加载...</div>';
+                var str = '<div class="vouchers">xxxxxxxxxx</div>'
+                if(num < 0.02){
+                    $('.bodymain').append(loading);
+                    setTimeout(function(){
+                        $('.loading').remove();
+                        $('#vou_list').append(str);
+                    },6)
+                }
+            })
+        })
+    })
+</script>
+<footer></footer>
+</body>
+</html>
