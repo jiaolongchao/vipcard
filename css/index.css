@@ -116,8 +116,11 @@ header ul li {
     border-top: solid 1px #fff;
     padding-top: 0.12rem;
     display: flex;
+    -webkit-display: flex;
     flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     font-size: 0.18rem;
 }
 
@@ -516,7 +519,9 @@ header ul li {
 
 .interest {
     display: flex;
+    -webkit-display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     margin: 0.35rem auto;
 }
 
@@ -554,7 +559,9 @@ header ul li {
 
 .plan > .name {
     display: flex;
+    -webkit-display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     height: 0.38rem;
     line-height: 0.38rem;
     background: url("../images/line.png") repeat-x bottom;
@@ -574,7 +581,9 @@ header ul li {
 
 .plan > .message {
     display: flex;
+    -webkit-display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     align-items: center;
 }
 
