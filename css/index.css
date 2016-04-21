@@ -299,7 +299,9 @@ header ul li {
     margin-top: 1.50rem;
     font-size: 0.18rem;
     display: flex;
+    -webkit-display: flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .vouchers .tips .arrow {
