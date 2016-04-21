@@ -162,6 +162,7 @@ header ul li {
     border-top: solid 1px #d3d3d3;
     border-right: solid 1px #d3d3d3;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     width: 0.19rem;
     height: 0.19rem;
 }
